@@ -12,11 +12,11 @@ AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的範例應用�
 ## 安裝步驟
 
 - 登入 [OpenAI](https://beta.openai.com/) 平台，或註冊一個新的帳號。
-  - 生成一個 OpenAI 的 API 金鑰（API key）。
+  - 生成一個 OpenAI 的 [API 金鑰](/demo/openai-api-key.png)（API key）。
 - 登入 [LINE](https://developers.line.biz/) 平台，或註冊一個新的帳號。
   - 新增一個提供者（Provider），例如「My Provider」。
   - 在「My Provider」新增一個類型為「Messaging API」的頻道（Channel），例如「My AI Assistant」。
-  - 在「My AI Assistant」點選「Messaging API」頁籤，生成一個頻道的 API 金鑰（Channel access token）。
+  - 在「My AI Assistant」點選「Messaging API」頁籤，生成一個頻道的 [API 金鑰](/demo/line-api-key.png)（Channel access token）。
 - 登入 [GitHub](https://github.com/) 平台，或註冊一個新的帳號。
   - 進到 `ai-assistant` 專案頁面，點選「Fork」按鈕，將原始碼複製到自己的儲存庫。
 - 登入 [Vercel](https://vercel.com/) 平台，或註冊一個新的帳號。
@@ -30,9 +30,15 @@ AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的範例應用�
   - 點選「Verify」按鈕，驗證是否呼叫成功。
   - 將「Use webhook」功能打開。
   - 將「Auto-reply messages」功能關閉。
-  - 將「Use webhook」功能關閉。
+  - 將「Greeting messages」功能關閉。
   - 使用 LINE 手機應用程式掃描 QR code，加入好友。
 - 開始與你專屬的 AI 助理聊天！
+
+## 除錯
+
+請檢查專案的環境變數是否填寫正確，如果有進行變更，需要點選「Redeploy」按鈕，以重新部署。
+
+![Redeploy](/demo/vercel-redeploy.png)
 
 ## 開發
 
